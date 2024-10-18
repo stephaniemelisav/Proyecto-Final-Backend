@@ -1,3 +1,5 @@
-.env01
+__pycache__/
+*.pyc
+
 env01/ 
-Diagrama\ Vamo\ y\ vemo.drawio 
+Vamoyvemo/ifts/db.sqlite3
