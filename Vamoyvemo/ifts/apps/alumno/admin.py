@@ -4,4 +4,4 @@ from  .models import Alumno
 
 @admin.register(Alumno)
 class AlumnoAdmin(admin.ModelAdmin):
-    list_display = ('descripcion',)
+    list_display = ('nombre',)

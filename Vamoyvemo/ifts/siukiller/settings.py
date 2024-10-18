@@ -28,6 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+
 # Application definition
 
 DJANGO_APPS = [
@@ -46,13 +47,13 @@ EXTERNAL_APPS = [
 
 #APPS PROPIAS, lo que puede generar error.
 LOCAL_APPS = [
-    'apps.desarrollador',
     'apps.profesor',
     'apps.alumno',
     'apps.directivo'
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + EXTERNAL_APPS
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

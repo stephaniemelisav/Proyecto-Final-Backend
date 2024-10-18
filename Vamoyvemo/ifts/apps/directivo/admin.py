@@ -4,5 +4,5 @@ from  .models import Directivo
 
 @admin.register(Directivo)
 class DirectivoAdmin(admin.ModelAdmin):
-    list_display = ('descripcion',)
+    list_display = ('nombre',)
 
