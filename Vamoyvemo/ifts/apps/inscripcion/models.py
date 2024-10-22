@@ -1,6 +1,6 @@
 from django.db import models
 
-class Inscripcion(models.model):
+class Inscripcion(models.Model):
   fecha_inscripcion = models.DateField()
   estado = models.BooleanField()
 
