@@ -6,4 +6,4 @@ class Calificacion(models.Model):
   fecha_calificacion = models.DateField()
   
   def __str__(self):
-    return f"{self.valor}"
+    return f"{self.valor} {self.comentarios} {self.fecha_calificacion}"
