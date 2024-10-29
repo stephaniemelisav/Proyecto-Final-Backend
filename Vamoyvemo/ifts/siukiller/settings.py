@@ -47,9 +47,13 @@ EXTERNAL_APPS = [
 
 #APPS PROPIAS, lo que puede generar error.
 LOCAL_APPS = [
-    'apps.profesor',
     'apps.alumno',
-    'apps.directivo'
+    'apps.calificacion',
+    'apps.cursada',
+    'apps.evento',
+    'apps.inscripcion',
+    'apps.materia',
+    'apps.profesor',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + EXTERNAL_APPS

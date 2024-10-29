@@ -12,11 +12,12 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Profesor',
+            name='Calificacion',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('nombre', models.CharField(max_length=255)),
-                ('especialidad', models.CharField(max_length=100)),
+                ('valor', models.IntegerField(default=0)),
+                ('comentarios', models.CharField(max_length=250)),
+                ('fecha_calificacion', models.DateField()),
             ],
         ),
     ]

@@ -4,5 +4,4 @@ from  .models import Profesor
 
 @admin.register(Profesor)
 class ProfesorAdmin(admin.ModelAdmin):
-    list_display = ('nombre',)
-# Register your models here.
+    list_display = ('nombre', 'especialidad')
