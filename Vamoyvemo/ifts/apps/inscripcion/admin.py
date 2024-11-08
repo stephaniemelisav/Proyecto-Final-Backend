@@ -3,4 +3,4 @@ from apps.inscripcion.models import Inscripcion
 
 @admin.register(Inscripcion)
 class InscripcionAdmin(admin.ModelAdmin):
-  list_display = ('fecha_inscripcion', 'estado')
+  list_display = ('fecha_inscripcion', 'estado', 'cursada')

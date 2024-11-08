@@ -54,6 +54,7 @@ LOCAL_APPS = [
     'apps.inscripcion',
     'apps.materia',
     'apps.profesor',
+    'apps.institucion',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + EXTERNAL_APPS
