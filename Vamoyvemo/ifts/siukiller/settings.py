@@ -48,7 +48,6 @@ EXTERNAL_APPS = [
 #APPS PROPIAS, lo que puede generar error.
 LOCAL_APPS = [
     'apps.alumno',
-    'apps.calificacion',
     'apps.cursada',
     'apps.evento',
     'apps.inscripcion',
