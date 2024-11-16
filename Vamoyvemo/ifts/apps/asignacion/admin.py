@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from apps.asignacion.models import Asignacion
+
+@admin.register(Asignacion)
+class AsignacionAdmin(admin.ModelAdmin):
+  list_display = ['profesor', 'materia', 'cicloLectivo']
