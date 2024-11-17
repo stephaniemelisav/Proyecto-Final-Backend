@@ -1,5 +1,5 @@
 __pycache__/
 *.pyc
-
+migrations/
 env01/ 
 Vamoyvemo/ifts/db.sqlite3
