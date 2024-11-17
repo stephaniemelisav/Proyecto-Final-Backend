@@ -1,6 +1,6 @@
 from django.db import models
 
-class CicloLectivo(models):
+class CicloLectivo(models.Model):
   anio = models.IntegerField()
   periodo = models.CharField(max_length=50)
   fecha_inicio = models.DateField()
