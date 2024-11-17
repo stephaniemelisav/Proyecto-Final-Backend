@@ -1,5 +1,9 @@
 __pycache__/
 *.pyc
+<<<<<<< HEAD
 
+=======
+migrations/
+>>>>>>> origin/Dev_final
 env01/ 
 Vamoyvemo/ifts/db.sqlite3
