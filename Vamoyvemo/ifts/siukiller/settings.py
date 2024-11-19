@@ -50,6 +50,7 @@ LOCAL_APPS = [
     'apps.alumno',
     'apps.asignacion',
     'apps.cicloLectivo',
+    'apps.comandos', # app para generar datos aleatorios en base de datos
     'apps.cursada',
     'apps.evento',
     'apps.materia',
