@@ -76,7 +76,7 @@ ROOT_URLCONF = 'siukiller.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'], # Se agrega la carpeta templates para que busque los archivos html.
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
