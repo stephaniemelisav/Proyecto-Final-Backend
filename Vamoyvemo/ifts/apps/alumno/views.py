@@ -1,6 +1,7 @@
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
 from django.contrib import messages
+from django.http import HttpResponseRedirect
 from .models import Alumno
 
 class ListaAlumnos(ListView):
@@ -40,6 +41,9 @@ class EliminarAlumno(DeleteView):
     success_url = reverse_lazy('lista-alumnos')
     context_object_name = 'alumno'
 
-    def delete(self, request, *args, **kwargs):
-        messages.success(self.request, 'Alumno borrado exitosamente.')
-        return super().delete(request, *args, **kwargs)
+    def post(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        success_url = self.get_success_url()
+        self.object.delete()
+        messages.success(request, f'El alumno {self.object.nombre} {self.object.apellido} ha sido borrado exitosamente.')
+        return HttpResponseRedirect(success_url)
