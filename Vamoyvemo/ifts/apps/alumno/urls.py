@@ -6,5 +6,5 @@ urlpatterns = [
     path('alumno/detalle/<int:pk>/', DetalleAlumno.as_view(), name='detalle-alumno'),
     path('alumno/crear/', CrearAlumno.as_view(), name='crear-alumno'),
     path('alumno/editar/<int:pk>/', EditarAlumno.as_view(), name='editar-alumno'),
-    path('alumno/eliminar/<int:pk>/', EliminarAlumno.as_view(), name='eliminar-alumno'),
+    path('alumno/eliminar/<int:pk>/', EliminarAlumno.as_view(), name='borrar-alumno'),
 ]
