@@ -3,6 +3,7 @@ from django.urls import reverse_lazy
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from .models import Alumno
+from .forms import AlumnoForm
 
 class ListaAlumnos(ListView):
     model = Alumno
@@ -17,8 +18,8 @@ class DetalleAlumno(DetailView):
 
 class CrearAlumno(CreateView):
     model = Alumno
+    form_class = AlumnoForm
     template_name = 'alumno_formulario.html'
-    fields = ['numeroLegajo', 'nombre', 'apellido', 'email', 'telefono', 'estado']
     success_url = reverse_lazy('lista-alumnos')
 
     def form_valid(self, form):
@@ -27,8 +28,8 @@ class CrearAlumno(CreateView):
 
 class EditarAlumno(UpdateView):
     model = Alumno
+    form_class = AlumnoForm
     template_name = 'alumno_formulario.html'
-    fields = ['numeroLegajo', 'nombre', 'apellido', 'email', 'telefono', 'estado']
     success_url = reverse_lazy('lista-alumnos')
 
     def form_valid(self, form):
